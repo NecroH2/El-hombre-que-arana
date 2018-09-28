@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Mis Perris</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/gal.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" media="screen and (max-width: 700px)" href="css/celu.css">
+  <link rel="stylesheet" media="screen and (max-width: 400px)" href="css/enano.css">
+  <link rel="icon" href="https://png.icons8.com/office/40/000000/dog-footprint.png"/>
+  <link rel="stylesheet" href="">
+</head>
+<body>
+    <header>
+        <h1 id="head">AdoptDogs</h1>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html" tabindex="1">Inicio</a></li>
+                <li><a href="galeria.html" tabindex="2">Perritos</a></li>
+                <li><a href="formulario.html" tabindex="3">Inscribete</a></li>
+                <li><a href="" tabindex="4">Contactanos</a></li>
+            </ul>
+        </nav>
+     </header>
+     <main>
+            <p id="gal" >→ Inscribete</p>
+            <h1 id="titulo" >Inscripcion</h1>
+         <h1></h1>
+         <div id="formulario">
+            <form onSubmit="validate()" action="#">
+                    <label for="txtName">Nombre:</label>
+                    <input type="text" maxlength="50"
+                           minlength="3" id="txtName" 
+                    placeholder="Ingrese nombre" required/>
+                    <span id="nameValidator" style="color:red"></span>
+                    <br />
+                    <label for="txtCorreo">Correo:</label>
+                    <input type="email" id="txtCorreo"
+                    placeholder="Ingrese correo" required/>
+                    <br/>
+                    <label for="txtRut">Rut:</label>
+                        <input id="txtRut" type="text"
+                         onkeyup="modifyText()" placeholder="Ingrese Rut" required />    
+                    <br />
+                    <label for="txtDate">Fecha de Nacimiento:</label>
+                    <input type="date" id="txtDate" placeholder="Ingrese fecha" required
+                        max="2009-01-01" />
+                    <br />
+                    <label for="txtTel">Telefono de contacto:</label>
+                    <input type="number" id="txtTel" placeholder="Numero de telefono" required>
+                    <br/>
+                    <label for="txtRegion">Region:</label>
+                    <select id="txtRegion" oninput="selectCity()">     
+                    </select>
+                    <br />
+                    <label for="txtCity">Ciudad:</label>
+                    <select id="txtCity">
+                    </select>
+                    <br />
+                    <label for="txtVivienda">Vivienda:</label>
+                    <select id="txtVivienda">     
+                    </select>
+                    <br />
+                    <br/>
+                    <button>Guardar</button>
+                </form>
+            </div>
+     </main>
+     <footer>
+            <div id="contacto">
+              <h4 id="cont" >INFORMACION DE CONTACTO</h4>
+              <br/>
+              <h5 id="cont" >TELÉFONO</h5>
+              <p id="cont" >+56 22 656 4324</p>
+              <br/>
+              <h5 id="cont" >CORREO ELECTRÓNICO</h5>
+              <p id="cont" >adopta@adoptdogs.cl</p>
+              <p id="p" >@ Todos los derechos reservados</p>
+            </div>
+            <br>
+          </footer>
+</body>
+<script src="js/rut.js"></script>
+<script src="js/cityS.js"></script>
+</html>

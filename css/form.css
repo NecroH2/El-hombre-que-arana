@@ -1,0 +1,13 @@
+form{
+    padding: 10px;
+    margin: auto;
+}
+
+button{
+    min-width: 48px;
+}
+
+#formulario{
+    display: flex;
+    width: 100%;
+}
